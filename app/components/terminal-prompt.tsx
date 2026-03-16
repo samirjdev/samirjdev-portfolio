@@ -44,7 +44,7 @@ export function TerminalPrompt({ className, command, onComplete, isActive = true
 
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <span className="text-blue-500 whitespace-nowrap">samir@usf:~$</span>
+      <span className="text-emerald-500 font-bold whitespace-nowrap">samir@usf:~$</span>
       <div className="relative flex-1 flex items-center">
         {isInteractive ? (
           <>
@@ -61,19 +61,19 @@ export function TerminalPrompt({ className, command, onComplete, isActive = true
             />
             {/* Custom blinking cursor block that follows text */}
             <span 
-              className="absolute pointer-events-none w-2 h-4 bg-blue-500 animate-blink"
+              className="absolute pointer-events-none w-2 h-4 bg-emerald-500 animate-blink"
               style={{ left: `${inputVal.length}ch` }}
             />
           </>
         ) : command ? (
           <TypingEffect
             text={command}
-            className="text-white break-all"
+            className="text-white break-all font-bold"
             onComplete={onComplete}
             showCursor={isActive}
           />
         ) : isActive && (
-          <span className="w-2 h-4 bg-blue-500 animate-blink block" />
+          <span className="w-2 h-4 bg-emerald-500 animate-blink block" />
         )}
       </div>
     </div>
