@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils"
 import { useState } from "react"
-import { FileText, FolderGit2 } from "lucide-react"
+import { FileText, FolderGit2, Shield } from "lucide-react"
 
 interface TerminalLayoutProps {
   children: React.ReactNode
@@ -70,6 +70,17 @@ export function TerminalLayout({
             <FileText className="w-5 h-5" />
             <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-1.5 py-0.5 bg-black border border-green-500 text-green-500 text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap max-w-[60px]">
               Resume
+            </span>
+          </button>
+        </div>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10">
+          <button
+            onClick={() => window.location.href = '/certs'}
+            className="p-2 text-green-500 hover:bg-green-500/10 rounded-lg transition-colors group relative"
+          >
+            <Shield className="w-5 h-5" />
+            <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-1.5 py-0.5 bg-black border border-green-500 text-green-500 text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Certs
             </span>
           </button>
         </div>
