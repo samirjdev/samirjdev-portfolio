@@ -73,8 +73,7 @@ export function TerminalLayout({
             </span>
           </button>
         </div>
-<<<<<<< HEAD
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10">
+        <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 z-10">
           <button
             onClick={() => window.location.href = '/certs'}
             className="p-2 text-green-500 hover:bg-green-500/10 rounded-lg transition-colors group relative"
@@ -85,10 +84,7 @@ export function TerminalLayout({
             </span>
           </button>
         </div>
-        <div className="absolute bottom-4 right-4 z-10">
-=======
         <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10">
->>>>>>> be64b83a3316717c7d49d7fc7c7e6a3e2a8c6bb3
           <button
             onClick={() => window.open(rightButtonHref, '_blank')}
             className="p-2 text-green-500 hover:bg-green-500/10 rounded-lg transition-colors group relative"
